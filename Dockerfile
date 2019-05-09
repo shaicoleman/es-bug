@@ -12,7 +12,7 @@ ENV LD_PRELOAD /usr/lib/x86_64-linux-gnu/libeatmydata.so
 RUN \
   apt-add-repository ppa:brightbox/ruby-ng && \
   apt-get update && \
-  apt-get install -y ruby2.4 ruby2.4-dev build-essential git && \
+  apt-get install -y ruby2.6 ruby2.6-dev build-essential git && \
   adduser --disabled-password --gecos '' es
 
 ADD gemrc /etc
